@@ -19,6 +19,7 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_andro
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent;
 import hilt_aggregated_deps._com_example_grayhattestproject_GrayHatApp_GeneratedInjector;
 import hilt_aggregated_deps._com_example_grayhattestproject_ui_HomeActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_example_grayhattestproject_ui_ProductDetailsActivity_GeneratedInjector;
 import hilt_aggregated_deps._com_example_grayhattestproject_ui_ProductsFragment_GeneratedInjector;
 import hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint;
 import hilt_aggregated_deps._dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
@@ -61,6 +62,7 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
     aggregatedDeps = {
         _com_example_grayhattestproject_GrayHatApp_GeneratedInjector.class,
         _com_example_grayhattestproject_ui_HomeActivity_GeneratedInjector.class,
+        _com_example_grayhattestproject_ui_ProductDetailsActivity_GeneratedInjector.class,
         _com_example_grayhattestproject_ui_ProductsFragment_GeneratedInjector.class,
         _dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint.class,
         _dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,

@@ -8,7 +8,10 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
 import com.example.grayhattestproject.adapters.ProductsAdapter;
+import com.example.grayhattestproject.repositories.CartManager;
 import com.example.grayhattestproject.ui.HomeActivity;
+import com.example.grayhattestproject.ui.ProductDetailsActivity;
+import com.example.grayhattestproject.ui.ProductDetailsActivity_MembersInjector;
 import com.example.grayhattestproject.ui.ProductsFragment;
 import com.example.grayhattestproject.ui.ProductsFragment_MembersInjector;
 import com.google.errorprone.annotations.CanIgnoreReturnValue;
@@ -369,6 +372,11 @@ public final class DaggerGrayHatApp_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectProductDetailsActivity(ProductDetailsActivity arg0) {
+      injectProductDetailsActivity2(arg0);
+    }
+
+    @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
       return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(Collections.<String>emptySet(), new ViewModelCBuilder(singletonCImpl, activityRetainedCImpl));
     }
@@ -391,6 +399,12 @@ public final class DaggerGrayHatApp_HiltComponents_SingletonC {
     @Override
     public ViewComponentBuilder viewComponentBuilder() {
       return new ViewCBuilder(singletonCImpl, activityRetainedCImpl, activityCImpl);
+    }
+
+    @CanIgnoreReturnValue
+    private ProductDetailsActivity injectProductDetailsActivity2(ProductDetailsActivity instance) {
+      ProductDetailsActivity_MembersInjector.injectCartManager(instance, singletonCImpl.cartManagerProvider.get());
+      return instance;
     }
   }
 
@@ -487,9 +501,17 @@ public final class DaggerGrayHatApp_HiltComponents_SingletonC {
   private static final class SingletonCImpl extends GrayHatApp_HiltComponents.SingletonC {
     private final SingletonCImpl singletonCImpl = this;
 
+    private Provider<CartManager> cartManagerProvider;
+
     private SingletonCImpl() {
 
+      initialize();
 
+    }
+
+    @SuppressWarnings("unchecked")
+    private void initialize() {
+      this.cartManagerProvider = DoubleCheck.provider(new SwitchingProvider<CartManager>(singletonCImpl, 0));
     }
 
     @Override
@@ -509,6 +531,28 @@ public final class DaggerGrayHatApp_HiltComponents_SingletonC {
     @Override
     public ServiceComponentBuilder serviceComponentBuilder() {
       return new ServiceCBuilder(singletonCImpl);
+    }
+
+    private static final class SwitchingProvider<T> implements Provider<T> {
+      private final SingletonCImpl singletonCImpl;
+
+      private final int id;
+
+      SwitchingProvider(SingletonCImpl singletonCImpl, int id) {
+        this.singletonCImpl = singletonCImpl;
+        this.id = id;
+      }
+
+      @SuppressWarnings("unchecked")
+      @Override
+      public T get() {
+        switch (id) {
+          case 0: // com.example.grayhattestproject.repositories.CartManager 
+          return (T) new CartManager();
+
+          default: throw new AssertionError(id);
+        }
+      }
     }
   }
 }

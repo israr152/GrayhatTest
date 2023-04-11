@@ -1,6 +1,7 @@
 package com.example.grayhattestproject;
 
 import com.example.grayhattestproject.ui.HomeActivity_GeneratedInjector;
+import com.example.grayhattestproject.ui.ProductDetailsActivity_GeneratedInjector;
 import com.example.grayhattestproject.ui.ProductsFragment_GeneratedInjector;
 import dagger.Binds;
 import dagger.Component;
@@ -167,6 +168,7 @@ public final class GrayHatApp_HiltComponents {
   )
   @ActivityScoped
   public abstract static class ActivityC implements HomeActivity_GeneratedInjector,
+      ProductDetailsActivity_GeneratedInjector,
       ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint,
