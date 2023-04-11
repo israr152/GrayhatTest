@@ -1,5 +1,6 @@
 package com.example.grayhattestproject.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -8,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.grayhattestproject.databinding.ListitemProductBinding
 import com.example.grayhattestproject.models.Product
+import com.example.grayhattestproject.ui.ProductDetailsActivity
+import com.google.gson.Gson
 import javax.inject.Inject
 
 class ProductsAdapter @Inject constructor() : ListAdapter<Product, RecyclerView.ViewHolder>(DiffCallback) {
@@ -41,6 +44,13 @@ class ProductsAdapter @Inject constructor() : ListAdapter<Product, RecyclerView.
                 tvPrice.text = "$${product.price}"
 
                 Glide.with(ivProductImage).load(product.image).into(ivProductImage)
+
+                cvItem.setOnClickListener {
+                    val intent = Intent(root.context,ProductDetailsActivity::class.java).also {
+                        it.putExtra("product", Gson().toJson(product))
+                    }
+                    root.context.startActivity(intent)
+                }
             }
         }
     }

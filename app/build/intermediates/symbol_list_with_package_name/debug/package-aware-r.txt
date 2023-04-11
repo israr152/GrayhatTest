@@ -2771,6 +2771,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable color_background
+drawable color_background_selected
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2798,6 +2800,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
+drawable ic_back
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -2806,7 +2809,11 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_color1
+drawable ic_color2
+drawable ic_color3
 drawable ic_drawer
+drawable ic_fav
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2996,6 +3003,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id brandsTabLayout
+id btnAddToCart
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3013,6 +3021,8 @@ id checkbox
 id checked
 id chronometer
 id circle_center
+id clContent
+id clTop
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -3035,6 +3045,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id cvItem
 id dark
 id date_picker_actions
 id decelerate
@@ -3127,7 +3138,10 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivBack
 id ivDrawer
+id ivFav
+id ivImage
 id ivProductImage
 id jumpToEnd
 id jumpToStart
@@ -3382,8 +3396,15 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvColor1
+id tvColor2
+id tvColor3
+id tvColors
+id tvDescription
+id tvDetails
 id tvName
 id tvPrice
+id tvReviews
 id tvTitle
 id tvType
 id unchecked
@@ -3519,6 +3540,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_product_details
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3645,10 +3667,12 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string chalk_pink
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string colors
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -3667,7 +3691,9 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string dark_order
 string default_web_client_id
+string details
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3682,6 +3708,7 @@ string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string light_pink
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3783,6 +3810,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string reviews
 string search_menu_title
 string search_product
 string searchbar_scrolling_view_behavior

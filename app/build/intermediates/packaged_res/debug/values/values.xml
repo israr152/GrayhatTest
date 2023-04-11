@@ -11,14 +11,20 @@
     <color name="textColorHint">#757575</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">GrayhatTestProject</string>
+    <string name="chalk_pink">chalk pink</string>
+    <string name="colors">colors</string>
+    <string name="dark_order">dark order</string>
     <string name="default_web_client_id" translatable="false">965737187421-tli4l1ukq4k60d8kk13fjbrqm1efhbsf.apps.googleusercontent.com</string>
+    <string name="details">Details</string>
     <string name="find_your_suitable_watch_now">find your suitable watch now.</string>
     <string name="gcm_defaultSenderId" translatable="false">965737187421</string>
     <string name="google_api_key" translatable="false">AIzaSyAOpmAYa3p_6EjGPg7Rw9XRzeAaO7IL__A</string>
     <string name="google_app_id" translatable="false">1:965737187421:android:64207253104a33c4e8e5b4</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAOpmAYa3p_6EjGPg7Rw9XRzeAaO7IL__A</string>
     <string name="google_storage_bucket" translatable="false">grayhattest.appspot.com</string>
+    <string name="light_pink">light pink</string>
     <string name="project_id" translatable="false">grayhattest</string>
+    <string name="reviews">Reviews</string>
     <string name="search_product">search product</string>
     <style name="Theme.GrayhatTestProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         

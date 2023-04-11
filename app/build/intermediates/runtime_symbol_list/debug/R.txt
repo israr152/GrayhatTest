@@ -2770,6 +2770,8 @@ int drawable btn_radio_off_mtrl 0x7f07007f
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f070080
 int drawable btn_radio_on_mtrl 0x7f070081
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070082
+int drawable color_background 0x7f070100
+int drawable color_background_selected 0x7f070101
 int drawable common_full_open_on_phone 0x7f070083
 int drawable common_google_signin_btn_icon_dark 0x7f070084
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070085
@@ -2797,6 +2799,7 @@ int drawable design_snackbar_background 0x7f07009a
 int drawable googleg_disabled_color_18 0x7f07009b
 int drawable googleg_standard_color_18 0x7f07009c
 int drawable ic_arrow_back_black_24 0x7f07009d
+int drawable ic_back 0x7f0700fe
 int drawable ic_call_answer 0x7f07009e
 int drawable ic_call_answer_low 0x7f07009f
 int drawable ic_call_answer_video 0x7f0700a0
@@ -2805,7 +2808,11 @@ int drawable ic_call_decline 0x7f0700a2
 int drawable ic_call_decline_low 0x7f0700a3
 int drawable ic_clear_black_24 0x7f0700a4
 int drawable ic_clock_black_24dp 0x7f0700a5
+int drawable ic_color1 0x7f070102
+int drawable ic_color2 0x7f070103
+int drawable ic_color3 0x7f070104
 int drawable ic_drawer 0x7f0700a6
+int drawable ic_fav 0x7f0700ff
 int drawable ic_keyboard_black_24dp 0x7f0700a7
 int drawable ic_launcher_background 0x7f0700a8
 int drawable ic_launcher_foreground 0x7f0700a9
@@ -2995,6 +3002,7 @@ int id bounceBoth 0x7f080062
 int id bounceEnd 0x7f080063
 int id bounceStart 0x7f080064
 int id brandsTabLayout 0x7f080065
+int id btnAddToCart 0x7f080209
 int id buttonPanel 0x7f080066
 int id cache_measures 0x7f080067
 int id callMeasure 0x7f080068
@@ -3012,6 +3020,8 @@ int id checkbox 0x7f080073
 int id checked 0x7f080074
 int id chronometer 0x7f080075
 int id circle_center 0x7f080076
+int id clContent 0x7f08020a
+int id clTop 0x7f08020b
 int id clear_text 0x7f080077
 int id clip_horizontal 0x7f080078
 int id clip_vertical 0x7f080079
@@ -3034,6 +3044,7 @@ int id currentState 0x7f080089
 int id custom 0x7f08008a
 int id customPanel 0x7f08008b
 int id cut 0x7f08008c
+int id cvItem 0x7f080205
 int id dark 0x7f08008d
 int id date_picker_actions 0x7f08008e
 int id decelerate 0x7f08008f
@@ -3126,7 +3137,10 @@ int id invisible 0x7f0800e4
 int id inward 0x7f0800e5
 int id italic 0x7f0800e6
 int id item_touch_helper_previous_elevation 0x7f0800e7
+int id ivBack 0x7f080206
 int id ivDrawer 0x7f0800e8
+int id ivFav 0x7f080207
+int id ivImage 0x7f080208
 int id ivProductImage 0x7f0800e9
 int id jumpToEnd 0x7f0800ea
 int id jumpToStart 0x7f0800eb
@@ -3381,8 +3395,15 @@ int id transition_position 0x7f0801e3
 int id transition_scene_layoutid_cache 0x7f0801e4
 int id transition_transform 0x7f0801e5
 int id triangle 0x7f0801e6
+int id tvColor1 0x7f08020c
+int id tvColor2 0x7f08020d
+int id tvColor3 0x7f08020e
+int id tvColors 0x7f08020f
+int id tvDescription 0x7f080210
+int id tvDetails 0x7f080211
 int id tvName 0x7f0801e7
 int id tvPrice 0x7f0801e8
+int id tvReviews 0x7f080212
 int id tvTitle 0x7f0801e9
 int id tvType 0x7f0801ea
 int id unchecked 0x7f0801eb
@@ -3518,6 +3539,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
+int layout activity_product_details 0x7f0b006c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f
@@ -3644,10 +3666,12 @@ int string call_notification_hang_up_action 0x7f100027
 int string call_notification_incoming_text 0x7f100028
 int string call_notification_ongoing_text 0x7f100029
 int string call_notification_screening_text 0x7f10002a
+int string chalk_pink 0x7f1000bd
 int string character_counter_content_description 0x7f10002b
 int string character_counter_overflowed_content_description 0x7f10002c
 int string character_counter_pattern 0x7f10002d
 int string clear_text_end_icon_content_description 0x7f10002e
+int string colors 0x7f1000be
 int string common_google_play_services_enable_button 0x7f10002f
 int string common_google_play_services_enable_text 0x7f100030
 int string common_google_play_services_enable_title 0x7f100031
@@ -3666,7 +3690,9 @@ int string common_google_play_services_wear_update_text 0x7f10003d
 int string common_open_on_phone 0x7f10003e
 int string common_signin_button_text 0x7f10003f
 int string common_signin_button_text_long 0x7f100040
+int string dark_order 0x7f1000bf
 int string default_web_client_id 0x7f100041
+int string details 0x7f1000c0
 int string error_a11y_label 0x7f100042
 int string error_icon_content_description 0x7f100043
 int string exposed_dropdown_menu_content_description 0x7f100044
@@ -3681,6 +3707,7 @@ int string google_storage_bucket 0x7f10004c
 int string hide_bottom_view_on_scroll_behavior 0x7f10004d
 int string icon_content_description 0x7f10004e
 int string item_view_role_description 0x7f10004f
+int string light_pink 0x7f1000c1
 int string m3_sys_motion_easing_emphasized 0x7f100050
 int string m3_sys_motion_easing_emphasized_accelerate 0x7f100051
 int string m3_sys_motion_easing_emphasized_decelerate 0x7f100052
@@ -3782,6 +3809,7 @@ int string path_password_eye_mask_strike_through 0x7f1000b1
 int string path_password_eye_mask_visible 0x7f1000b2
 int string path_password_strike_through 0x7f1000b3
 int string project_id 0x7f1000b4
+int string reviews 0x7f1000c2
 int string search_menu_title 0x7f1000b5
 int string search_product 0x7f1000b6
 int string searchbar_scrolling_view_behavior 0x7f1000b7

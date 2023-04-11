@@ -2,4 +2,10 @@
     <string name="app_name">GrayhatTestProject</string>
     <string name="search_product">search product</string>
     <string name="find_your_suitable_watch_now">find your suitable watch now.</string>
+    <string name="colors">colors</string>
+    <string name="details">Details</string>
+    <string name="reviews">Reviews</string>
+    <string name="chalk_pink">chalk pink</string>
+    <string name="light_pink">light pink</string>
+    <string name="dark_order">dark order</string>
 </resources>

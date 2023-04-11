@@ -36,6 +36,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.GrayhatTestProject" >
         <activity
+            android:name="com.example.grayhattestproject.ui.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.grayhattestproject.ui.HomeActivity"
             android:exported="true" >
             <intent-filter>
