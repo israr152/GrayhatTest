@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.grayhattestproject.adapters.ProductsAdapter
 import com.example.grayhattestproject.databinding.FragmentProductsBinding
 import com.example.grayhattestproject.viewmodels.HomeViewModel
