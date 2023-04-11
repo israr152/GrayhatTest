@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.grayhattestproject.app-mergeDebugResources-49:/values-ko/values-ko.xml",
+            "outputFile": "com.example.grayhattestproject.app-mergeDebugResources-50:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\SUNNY\\.gradle\\caches\\transforms-3\\558aec25ef768e79c326f3a92989e484\\transformed\\play-services-basement-18.1.0\\res\\values-ko\\values.xml",

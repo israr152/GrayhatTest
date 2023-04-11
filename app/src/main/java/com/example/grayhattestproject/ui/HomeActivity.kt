@@ -2,10 +2,13 @@ package com.example.grayhattestproject.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.grayhattestproject.databinding.ActivityMainBinding
+import com.example.grayhattestproject.viewmodels.HomeViewModel
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -15,10 +18,16 @@ class HomeActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
+    private val homeViewModel: HomeViewModel by viewModels()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         initializeTabLayout()
+
+        binding.etSearch.addTextChangedListener {
+            homeViewModel.filterProducts(it.toString())
+        }
     }
 
     private fun initializeTabLayout() {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.grayhattestproject.app-mergeDebugResources-49:/values-ur/values-ur.xml",
+            "outputFile": "com.example.grayhattestproject.app-mergeDebugResources-50:/values-ur/values-ur.xml",
             "map": [
                 {
                     "source": "C:\\Users\\SUNNY\\.gradle\\caches\\transforms-3\\8bd4bcf79bdf10e4c46bbcafda2c2a5c\\transformed\\core-1.10.0\\res\\values-ur\\values-ur.xml",

@@ -1,9 +1,10 @@
 package com.example.grayhattestproject.models
 
-data class Product(
-    var id:Long,
-    var name:String,
-    var type:String,
-    var price:String,
-    var details:String,
-)
+class Product{
+    var id:Int = 0
+    var name:String = ""
+    var type:String = ""
+    var price:Int = 0
+    var details:String = ""
+    var image:String = ""
+}

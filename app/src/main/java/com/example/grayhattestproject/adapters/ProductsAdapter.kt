@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.grayhattestproject.databinding.ListitemProductBinding
 import com.example.grayhattestproject.models.Product
 import javax.inject.Inject
@@ -37,7 +38,9 @@ class ProductsAdapter @Inject constructor() : ListAdapter<Product, RecyclerView.
             binding.apply {
                 tvName.text = product.name
                 tvType.text = product.type
-                tvPrice.text = product.price
+                tvPrice.text = "$${product.price}"
+
+                Glide.with(ivProductImage).load(product.image).into(ivProductImage)
             }
         }
     }

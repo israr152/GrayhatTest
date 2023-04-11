@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.grayhattestproject.adapters.ProductsAdapter
@@ -51,7 +52,7 @@ class ProductsFragment : Fragment() {
 
     private fun initRecycler() {
         binding?.apply {
-            rvProducts.layoutManager = LinearLayoutManager(context)
+            rvProducts.layoutManager = GridLayoutManager(context,2)
             rvProducts.adapter = adapter
         }
     }

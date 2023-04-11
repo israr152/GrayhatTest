@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.grayhattestproject.app-mergeDebugResources-49:/values-ne/values-ne.xml",
+            "outputFile": "com.example.grayhattestproject.app-mergeDebugResources-50:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\SUNNY\\.gradle\\caches\\transforms-3\\671a3b0d76763d3baf40226106283948\\transformed\\play-services-base-18.0.1\\res\\values-ne\\values.xml",
