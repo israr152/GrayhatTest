@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">965737187421-tli4l1ukq4k60d8kk13fjbrqm1efhbsf.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">965737187421</string>
+    <string name="google_api_key" translatable="false">AIzaSyAOpmAYa3p_6EjGPg7Rw9XRzeAaO7IL__A</string>
+    <string name="google_app_id" translatable="false">1:965737187421:android:64207253104a33c4e8e5b4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAOpmAYa3p_6EjGPg7Rw9XRzeAaO7IL__A</string>
+    <string name="google_storage_bucket" translatable="false">grayhattest.appspot.com</string>
+    <string name="project_id" translatable="false">grayhattest</string>
+</resources>

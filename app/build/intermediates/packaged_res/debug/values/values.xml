@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundColor">#ECF6F6</color>
+    <color name="black">#FF000000</color>
+    <color name="primary_color">#004EDA</color>
+    <color name="primary_color_variant">#004EDA</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="secondary_color">#FF03DAC5</color>
+    <color name="secondary_color_variant">#FF018786</color>
+    <color name="tabTextColor">#988888</color>
+    <color name="textColorHint">#757575</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">GrayhatTestProject</string>
+    <string name="default_web_client_id" translatable="false">965737187421-tli4l1ukq4k60d8kk13fjbrqm1efhbsf.apps.googleusercontent.com</string>
+    <string name="find_your_suitable_watch_now">find your suitable watch now.</string>
+    <string name="gcm_defaultSenderId" translatable="false">965737187421</string>
+    <string name="google_api_key" translatable="false">AIzaSyAOpmAYa3p_6EjGPg7Rw9XRzeAaO7IL__A</string>
+    <string name="google_app_id" translatable="false">1:965737187421:android:64207253104a33c4e8e5b4</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAOpmAYa3p_6EjGPg7Rw9XRzeAaO7IL__A</string>
+    <string name="google_storage_bucket" translatable="false">grayhattest.appspot.com</string>
+    <string name="project_id" translatable="false">grayhattest</string>
+    <string name="search_product">search product</string>
+    <style name="Theme.GrayhatTestProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_color_variant</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        
+        <item name="android:statusBarColor">@color/backgroundColor</item>
+
+        
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+</resources>
